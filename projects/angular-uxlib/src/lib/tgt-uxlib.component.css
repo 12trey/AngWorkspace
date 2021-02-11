@@ -1,0 +1,44 @@
+.resizetable {
+    position: relative;
+    border: solid 1px black;
+    border-collapse: collapse;
+    table-layout: fixed;
+    box-sizing: border-box;
+}
+.resizetable th {
+    position: relative;
+    border: solid 1px black;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    min-width: 4px;
+}
+.resizetable td {    
+    border: solid 1px black;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    min-width: 4px;
+}
+.handle {
+    position: absolute;
+    background-color: transparent;
+    opacity: 0;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    width: 10px;
+    cursor: col-resize;
+}
+.unselectable {
+    -webkit-user-select: none;
+    -moz-user-select: -moz-none;
+    -ms-user-select: none;
+    user-select: none;
+}
+.sizemaintainer {
+    display: block;
+    height: 1px;
+    width: 0px;
+    background-color: transparent;
+}

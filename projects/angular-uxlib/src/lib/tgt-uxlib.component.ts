@@ -139,7 +139,7 @@ export class TgtUxlibComponent implements
         }
         this.handleHeaders.push(handleHeader);        
       }
-      console.log(`totalwidth: ${totalwidths}`);
+      //console.log(`totalwidth: ${totalwidths}`);
       //this.r2.addClass(table, 'resizetable');
 
       this.r2.setStyle(table, 'width', "0px");
